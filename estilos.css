@@ -1,0 +1,65 @@
+h1{
+    color:blue;
+}
+
+#titulo{
+    color: rgb(255, 255, 255);
+     text-align: left;
+    
+      font-size: 100px;
+}
+
+#subtitulo{
+     font-size: 40px;
+     text-align: left;
+     text-decoration: double;
+     padding: 100px;
+}
+
+#promo{
+    color: gray;
+    text-decoration: black;
+    text-align: center;
+}
+
+#nav{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+#nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+#nav a:hover {
+    color: blue;
+}
+
+#fondo{
+     background-color: blanchedalmond;
+}
+
+#portada{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(imagen/madre-teresa-eliza-gara-albert-verges.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#lema{
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
