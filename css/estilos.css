@@ -184,13 +184,16 @@ hr {
     align-items: center;
     gap: 8px 18px;
     background-color: #FFFCF6;
-    border: 1px solid #E8DFD0;
+    border: 1px solid #CDE6ED;
     border-radius: 15px;
     box-shadow: 0 4px 14px rgba(64, 61, 53, 0.07);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+    cursor: pointer;
 }
 
 .tarjeta:hover {
+    background-color: #F0FAFC;
+    border-color: #A9D8E5;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(64, 61, 53, 0.12);
 }
@@ -336,3 +339,93 @@ footer {
     font-weight: 700;
     color: #4F6040;
 }
+
+
+.accesos-inicio .acceso-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    min-height: 190px;
+    padding: 24px;
+    background-color: #F0FAFC;
+    border: 1px solid #CDE6ED;
+    border-radius: 15px;
+    color: #403D35;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.accesos-inicio .acceso-inicio h3,
+.accesos-inicio .acceso-inicio p {
+    margin: 0;
+}
+
+.accesos-inicio .acceso-inicio span {
+    color: #376C7D;
+    font-weight: 700;
+}
+
+.accesos-inicio .acceso-inicio:focus-visible {
+    outline: 3px solid #7ABACB;
+    outline-offset: 3px;
+}
+
+.panel-detalle {
+    position: relative;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #F0FAFC;
+    border: 1px solid #CDE6ED;
+    border-radius: 15px;
+}
+
+.panel-detalle h3 {
+    color: #3F4B32;
+    font-size: 28px;
+}
+
+.panel-detalle[hidden] {
+    display: none;
+}
+
+.panel-detalle .foto-vacia {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.cerrar-panel {
+    display: block;
+    margin-left: auto;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #DDF3FA;
+    color: #245A70;
+    cursor: pointer;
+}
+
+.boton-contacto {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #DDF3FA;
+    color: #245A70;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    .accesos-inicio {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-detalle {
+        margin: 24px 16px;
+        padding: 18px;
+    }
+}
+

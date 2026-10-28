@@ -50,57 +50,43 @@
 
         <hr>
 
-        <section id="actividades">
-            <h2>Conocé nuestra comunidad</h2>
+        
+<section id="actividades">
+    <h2>Descubrí el Centro</h2>
 
-            <div class="contenedor-tarjetas">
+    <div class="contenedor-tarjetas accesos-inicio">
 
-                <article class="tarjeta">
-                    <div class="foto-vacia">
-                        <img src="imagen/Gente Mision.jpeg" alt="Jovenes Centro Madre Teresa">
-                    </div>
-                    <h3>Grupos</h3>
-                    <p>
-                        Encuentros para niños, preadolescentes
-                        y jóvenes.
-                    </p>
-                </article>
+        <article class="tarjeta acceso-inicio" tabindex="0" role="link" onclick="window.location.href='grupos.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='grupos.html'}">
+            <h3>Grupos y actividades</h3>
+            <p>Conocé nuestros espacios de encuentro, música, juegos y comunidad.</p>
+            <span>Descubrir espacios →</span>
+        </article>
 
-                <article class="tarjeta">
-                    <div class="foto-vacia">
-                        <img src="imagen/Servicio de Coro CMT.jpeg" alt="coro y musica">
-                    </div>
-                    <h3>Música</h3>
-                    <p>
-                        Aprendemos instrumentos y compartimos
-                        la música al servicio de otros.
-                    </p>
-                </article>
+        <article class="tarjeta acceso-inicio" tabindex="0" role="button" onclick="document.getElementById('panel-residencia').hidden=false;document.getElementById('panel-residencia').scrollIntoView({behavior:'smooth',block:'center'})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.getElementById('panel-residencia').hidden=false;document.getElementById('panel-residencia').scrollIntoView({behavior:'smooth',block:'center'})}">
+            <h3>Nuestra residencia</h3>
+            <p>Conocé este espacio de convivencia, estudio y acompañamiento.</p>
+            <span>Conocer la residencia →</span>
+        </article>
 
-                <article class="tarjeta">
-                    <div class="foto-vacia">
-                        <img src="imagen/Niños.jpeg" alt="Niños del Centro Madre Teresa">
-                    </div>
-                    <h3>Oratorio</h3>
-                    <p>
-                        Juegos, talleres, deporte y momentos
-                        de convivencia.
-                    </p>
-                </article>
+        <a class="tarjeta acceso-inicio" href="historia.html">
+            <h3>Nuestra historia</h3>
+            <p>Descubrí el camino y la identidad del Centro Madre Teresa.</p>
+            <span>Conocer nuestra historia →</span>
+        </a>
 
-                <article class="tarjeta">
-                    <div class="foto-vacia">
-                        <img src="imagen/Estudio.jpeg" alt="Espacio de estudio de la residencia">
-                    </div>
-                    <h3>Residencia</h3>
-                    <p>
-                        Un espacio de estudio, convivencia
-                        y acompañamiento.
-                    </p>
-                </article>
+    </div>
 
-            </div>
-        </section>
+    <div id="panel-residencia" class="panel-detalle" hidden>
+        <button type="button" class="cerrar-panel" onclick="document.getElementById('panel-residencia').hidden=true">Cerrar ×</button>
+        <h3>Nuestra residencia</h3>
+        <div class="foto-vacia">
+            <img src="imagen/Estudio.jpeg" alt="Espacio de estudio de la residencia">
+        </div>
+        <p>La residencia es un espacio de convivencia, estudio y acompañamiento en la vida cotidiana del Centro Madre Teresa.</p>
+        <a class="boton-contacto" href="contacto.html?motivo=residencia">Consultar por la residencia</a>
+    </div>
+</section>
+
 
         <section id="identidad">
             <h2>Tengo Sed</h2>
