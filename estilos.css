@@ -36,11 +36,11 @@ h1{
 }
 
 #nav a:hover {
-    color: blue;
+    color: #6F8062;
 }
 
 #fondo{
-     background-color: blanchedalmond;
+     background-color: #F5F0E6;
 }
 
 #portada{
@@ -62,4 +62,11 @@ h1{
     color: #f39c12;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+#subtitulo2{
+    color: #B9825A;
+    text-decoration: solid;
+    text-transform: none;
+    transition-duration: 10s;
 }
