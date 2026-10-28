@@ -1,5 +1,4 @@
 
-/* ESTILO GENERAL */
 * {
     box-sizing: border-box;
 }
@@ -15,7 +14,6 @@ h1, h2, h3 {
     font-family: 'Lora', serif;
 }
 
-/* PORTADA */
 #portada {
     min-height: 360px;
     padding: 45px 20px;
@@ -24,12 +22,9 @@ h1, h2, h3 {
     justify-content: center;
     text-align: center;
     color: white;
-
     background-image:
-        linear-gradient(rgba(25, 30, 20, 0.45),
-                        rgba(25, 30, 20, 0.55)),
+        linear-gradient(rgba(25, 30, 20, 0.45), rgba(25, 30, 20, 0.55)),
         url("../imagen/madre-teresa-eliza-gara-albert-verges.jpg");
-
     background-size: cover;
     background-position: center;
 }
@@ -37,34 +32,32 @@ h1, h2, h3 {
 #calido {
     min-height: 360px;
     padding: 45px 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     color: white;
-
     background-image:
-        linear-gradient(
-            rgba(25, 30, 20, 0.35),
-            rgba(25, 30, 20, 0.55)
-        ),
+        linear-gradient(rgba(25, 30, 20, 0.35), rgba(25, 30, 20, 0.55)),
         url("../imagen/portada-calida.png");
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #contenido-portada {
+    width: 100%;
     max-width: 900px;
+    margin: 0 auto;
 }
 
 #titulo {
     margin: 0;
     color: white;
-    font-size: clamp(40px, 7vw, 76px);
-    line-height: 1.1;
+    font-size: clamp(36px, 6vw, 76px);
+    line-height: 1.12;
+    text-wrap: balance;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
 }
 
 #lema {
@@ -83,7 +76,6 @@ h1, h2, h3 {
     font-style: italic;
 }
 
-/* MENÚ DE NAVEGACIÓN */
 #nav {
     display: flex;
     justify-content: center;
@@ -105,7 +97,6 @@ h1, h2, h3 {
     color: #D4C49A;
 }
 
-/* PRESENTACIÓN */
 #presentacion,
 #identidad {
     max-width: 850px;
@@ -134,14 +125,12 @@ hr {
     border-top: 1px solid #C9B99D;
 }
 
-/* ESPACIOS PARA LAS FOTOS */
 .foto-vacia {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 10px;
     background-color: #E8E3D8;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +144,7 @@ hr {
     object-fit: contain;
     display: block;
 }
-/* FOTO PRINCIPAL */
+
 #foto-principal {
     max-width: 1150px;
     margin: 35px auto;
@@ -167,7 +156,6 @@ hr {
     box-shadow: 0 5px 18px rgba(64, 61, 53, 0.12);
 }
 
-/* TARJETAS DE ACTIVIDADES */
 #actividades {
     max-width: 1150px;
     margin: 45px auto;
@@ -195,7 +183,6 @@ hr {
     grid-template-rows: auto 1fr;
     align-items: center;
     gap: 8px 18px;
-
     background-color: #FFFCF6;
     border: 1px solid #E8DFD0;
     border-radius: 15px;
@@ -232,7 +219,6 @@ hr {
     line-height: 1.6;
 }
 
-/* PIE DE PÁGINA */
 footer {
     margin-top: 45px;
     padding: 25px;
@@ -247,7 +233,6 @@ footer {
     letter-spacing: 3px;
 }
 
-/* ADAPTACIÓN A PANTALLAS PEQUEÑAS */
 @media (max-width: 450px) {
     .tarjeta {
         grid-template-columns: 1fr;
@@ -283,8 +268,6 @@ footer {
         overflow-wrap: break-word;
     }
 }
-
-/* FORMULARIO DE CONTACTO */
 
 #formulario-contacto {
     max-width: 650px;
