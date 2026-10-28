@@ -28,7 +28,7 @@ h1, h2, h3 {
     background-image:
         linear-gradient(rgba(25, 30, 20, 0.45),
                         rgba(25, 30, 20, 0.55)),
-        url("imagen/madre-teresa-eliza-gara-albert-verges.jpg");
+        url("../imagen/madre-teresa-eliza-gara-albert-verges.jpg");
 
     background-size: cover;
     background-position: center;
@@ -50,7 +50,7 @@ h1, h2, h3 {
             rgba(25, 30, 20, 0.35),
             rgba(25, 30, 20, 0.55)
         ),
-        url("imagen/portada-calida.png");
+        url("../imagen/portada-calida.png");
 
     background-size: cover;
     background-position: center;
@@ -282,4 +282,74 @@ footer {
     #nav {
         gap: 12px 18px;
     }
+}
+
+/* FORMULARIO DE CONTACTO */
+
+#formulario-contacto {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFCF5;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(64, 61, 53, 0.12);
+}
+
+#form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form-contacto label {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+#form-contacto input,
+#form-contacto select,
+#form-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C9BDA8;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    color: #403D35;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+#form-contacto input:focus,
+#form-contacto select:focus,
+#form-contacto textarea:focus {
+    outline: 2px solid #8B9A75;
+    border-color: #8B9A75;
+}
+
+#form-contacto textarea {
+    resize: vertical;
+}
+
+#form-contacto button {
+    margin-top: 12px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background-color: #667653;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#form-contacto button:hover {
+    background-color: #4F6040;
+}
+
+#respuesta-contacto {
+    text-align: center;
+    font-weight: 700;
+    color: #4F6040;
 }
