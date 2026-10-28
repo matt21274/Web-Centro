@@ -5,14 +5,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Centro Madre Teresa</title>
+
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="imagen/logo.png" href="imagen/logo.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="imagen/logo.png" type="image/png">
 </head>
 
 <body>
 
+    <!-- ENCABEZADO -->
     <header id="portada">
         <div id="contenido-portada">
             <h1 id="titulo">Centro Madre Teresa</h1>
@@ -21,6 +28,7 @@
         </div>
     </header>
 
+    <!-- NAVEGACIÓN -->
     <nav id="nav">
         <a href="index.html">Inicio</a>
         <a href="historia.html">Nuestra historia</a>
@@ -30,6 +38,7 @@
 
     <main>
 
+        <!-- PRESENTACIÓN -->
         <section id="presentacion">
             <h2>Bienvenidos al Centro Madre Teresa</h2>
 
@@ -42,57 +51,156 @@
             </p>
         </section>
 
+        <!-- FOTO PRINCIPAL -->
         <section id="foto-principal">
             <div class="foto-vacia">
-                        <img src="imagen/Vistas a la ex Casa San Jose.jpeg" alt="Centro">
-                    </div>
+                <img src="imagen/Rosal.jpeg" alt="Centro Madre Teresa">
+            </div>
         </section>
 
         <hr>
 
-        
-<section id="actividades">
-    <h2>Descubrí el Centro</h2>
+        <!-- ACCESOS PRINCIPALES -->
+        <section id="actividades">
+            <h2>Descubrí el Centro</h2>
 
-    <div class="contenedor-tarjetas accesos-inicio">
+            <div class="contenedor-tarjetas accesos-inicio">
 
-        <article class="tarjeta acceso-inicio" tabindex="0" role="link" onclick="window.location.href='grupos.html'" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();window.location.href='grupos.html'}">
-            <h3>Grupos y actividades</h3>
-            <p>Conocé nuestros espacios de encuentro, música, juegos y comunidad.</p>
-            <span>Descubrir espacios →</span>
-        </article>
+                <a class="tarjeta acceso-inicio" href="grupos.html">
+                    <h3>Grupos y actividades</h3>
+                    <p>
+                        Conocé nuestros espacios de encuentro,
+                        música, juegos y comunidad.
+                    </p>
+                    <span>Descubrir espacios →</span>
+                </a>
 
-        <article class="tarjeta acceso-inicio" tabindex="0" role="button" onclick="document.getElementById('panel-residencia').hidden=false;document.getElementById('panel-residencia').scrollIntoView({behavior:'smooth',block:'center'})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.getElementById('panel-residencia').hidden=false;document.getElementById('panel-residencia').scrollIntoView({behavior:'smooth',block:'center'})}">
-            <h3>Nuestra residencia</h3>
-            <p>Conocé este espacio de convivencia, estudio y acompañamiento.</p>
-            <span>Conocer la residencia →</span>
-        </article>
+                <article
+                    class="tarjeta acceso-inicio tarjeta-interactiva"
+                    tabindex="0"
+                    role="button"
+                    data-panel="panel-residencia"
+                    aria-controls="panel-residencia"
+                    aria-expanded="false">
 
-        <a class="tarjeta acceso-inicio" href="historia.html">
-            <h3>Nuestra historia</h3>
-            <p>Descubrí el camino y la identidad del Centro Madre Teresa.</p>
-            <span>Conocer nuestra historia →</span>
-        </a>
+                    <h3>Nuestra residencia</h3>
+                    <p>
+                        Conocé este espacio de convivencia,
+                        estudio y acompañamiento.
+                    </p>
+                    <span>Conocer la residencia →</span>
+                </article>
 
-    </div>
+                <a class="tarjeta acceso-inicio" href="historia.html">
+                    <h3>Nuestra historia</h3>
+                    <p>
+                        Descubrí el camino y la identidad
+                        del Centro Madre Teresa.
+                    </p>
+                    <span>Conocer nuestra historia →</span>
+                </a>
 
-    <div id="panel-residencia" class="panel-detalle" hidden>
-        <button type="button" class="cerrar-panel" onclick="document.getElementById('panel-residencia').hidden=true">Cerrar ×</button>
-        <h3>Nuestra residencia</h3>
-        <div class="foto-vacia">
-            <img src="imagen/Estudio.jpeg" alt="Espacio de estudio de la residencia">
-        </div>
-        <p>La residencia es un espacio de convivencia, estudio y acompañamiento en la vida cotidiana del Centro Madre Teresa.</p>
-        <a class="boton-contacto" href="contacto.html?motivo=residencia">Consultar por la residencia</a>
-    </div>
-</section>
+                <article
+                    class="tarjeta acceso-inicio tarjeta-interactiva"
+                    tabindex="0"
+                    role="button"
+                    data-panel="panel-tengo-sed"
+                    aria-controls="panel-tengo-sed"
+                    aria-expanded="false">
 
+                    <h3>Tengo Sed</h3>
+                    <p>
+                        Un espacio de escucha, encuentro
+                        y acompañamiento espiritual.
+                    </p>
+                    <span>Conocé Tengo Sed →</span>
+                </article>
 
+            </div>
+
+            <!-- PANEL: RESIDENCIA -->
+            <div id="panel-residencia" class="panel-detalle" hidden>
+
+                <button
+                    type="button"
+                    class="cerrar-panel"
+                    data-cerrar-panel>
+                    Cerrar ×
+                </button>
+
+                <h3>Nuestra residencia</h3>
+
+                <div class="foto-vacia">
+                    <img
+                        src="imagen/Estudio.jpeg"
+                        alt="Espacio de estudio de la residencia">
+                </div>
+
+                <p>
+                    La residencia es un espacio de convivencia,
+                    estudio y acompañamiento en la vida cotidiana
+                    del Centro Madre Teresa.
+                </p>
+
+                <a
+                    class="boton-contacto"
+                    href="contacto.html?motivo=residencia">
+                    Consultar por la residencia
+                </a>
+
+            </div>
+
+            <!-- PANEL: TENGO SED -->
+            <div id="panel-tengo-sed" class="panel-detalle" hidden>
+
+                <button
+                    type="button"
+                    class="cerrar-panel"
+                    data-cerrar-panel>
+                    Cerrar ×
+                </button>
+
+                <h3>Tengo Sed</h3>
+
+                <div class="foto-vacia">
+                    <img
+                        src="imagen/sed.jpg"
+                        alt="Tengo Sed: amor y servicio a los demás">
+                </div>
+
+                <p>
+                    Tengo Sed nos invita a acercarnos a los demás,
+                    escuchar, acompañar y reconocer el valor
+                    de cada persona.
+                </p>
+
+                <p>
+                    Si necesitás conversar, buscás acompañamiento
+                    espiritual o querés conocer más sobre esta
+                    propuesta, podés comunicarte con el Centro
+                    Madre Teresa.
+                </p>
+
+                <a
+                    class="boton-contacto"
+                    href="contacto.html?motivo=tengo-sed">
+                    Solicitar acompañamiento
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- IDENTIDAD -->
         <section id="identidad">
             <h2>Tengo Sed</h2>
+
             <div class="foto-vacia">
-                        <img src="imagen/sed.jpg" alt="Amor en servicio">
-                    </div>
+                <img
+                    src="imagen/sed.jpg"
+                    alt="Amor en servicio">
+            </div>
+
             <p>
                 Una invitación a salir al encuentro de los demás,
                 escuchar, acompañar y descubrir a Dios en la vida
@@ -100,11 +208,35 @@
             </p>
         </section>
 
+        <!-- VIDEO DE PRESENTACIÓN -->
+        <section id="video-presentacion">
+            <h2>Conocé el Centro Madre Teresa</h2>
+
+            <p>
+                Un espacio para compartir, crecer y vivir
+                en comunidad.
+            </p>
+
+            <div class="contenedor-video">
+                <video controls preload="metadata">
+                    <source
+                        src="videos/presentacion.mp4"
+                        type="video/mp4">
+
+                    Tu navegador no puede reproducir este video.
+                </video>
+            </div>
+        </section>
+
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
         <p id="promo">† CMT</p>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="jv/script.js"></script>
 
 </body>
 </html>
