@@ -1,11 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Madre Teresa</title>
+
+    <title>Contacto | Centro Madre Teresa</title>
+
     <link rel="stylesheet" href="estilos.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagen/logo.png">
 </head>
 
 <body>
@@ -23,6 +29,59 @@
         <a href="grupos.html">Grupos y actividades</a>
         <a href="contacto.html">Contacto</a>
     </nav>
+
+    <main>
+
+        <section id="presentacion">
+            <h2>Contactanos</h2>
+
+            <p>
+                ¿Querés conocer más sobre el Centro Madre Teresa?
+                Escribinos y dejanos tu consulta. ¡Nos gustaría conocerte!
+            </p>
+        </section>
+
+        <section id="formulario-contacto">
+
+            <form id="form-contacto">
+
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre"
+                    placeholder="Escribí tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo"
+                    placeholder="ejemplo@correo.com" required>
+
+                <label for="motivo">Motivo del contacto</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Seleccioná una opción</option>
+                    <option value="Informacion">Quiero información</option>
+                    <option value="Actividades">Grupos y actividades</option>
+                    <option value="Residencia">Residencia</option>
+                    <option value="Otro">Otro motivo</option>
+                </select>
+
+                <label for="mensaje">Tu mensaje</label>
+                <textarea id="mensaje" name="mensaje"
+                    placeholder="Escribí tu consulta..." rows="5"
+                    required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+
+                <p id="respuesta-contacto" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="promo">† CMT</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

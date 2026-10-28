@@ -8,11 +8,11 @@ body {
     margin: 0;
     background-color: #F5F0E6;
     color: #403D35;
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: Georgia, serif;
+    font-family: 'Lora', serif;
 }
 
 /* PORTADA */
@@ -155,7 +155,6 @@ hr {
     object-fit: contain;
     display: block;
 }
-
 /* FOTO PRINCIPAL */
 #foto-principal {
     max-width: 1150px;
